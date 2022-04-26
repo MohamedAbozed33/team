@@ -6,6 +6,7 @@ void SysTick_Init(void){
 	NVIC_ST_CTRL_R = 0x05;	
 
 }
+//timer 100msec
 void Systick_wait100ms(){
 NVIC_ST_RELOAD_R =8000000 -1;
 	NVIC_ST_CURRENT_R =0;
